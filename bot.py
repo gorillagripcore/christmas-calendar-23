@@ -5,7 +5,7 @@ import pytz
 from book_config import books  
 
 def run_discord_bot():
-    TOKEN = 'add your token here'
+    TOKEN = 'MTE3ODY5Njg1ODAzMDMyMTc5NQ.GUnV1d.FAcJVTV4T30crJIXtZv0c4QeFu7SqCicX9jqPY'
     intents = discord.Intents.default()
     intents.messages = True
     intents.guilds = True
@@ -40,13 +40,6 @@ def run_discord_bot():
     @client.event
     async def on_ready():
         print(f'{client.user} is now running!')
-        
-        for guild in client.guilds:
-            christmas_channel = discord.utils.get(guild.text_channels, name="🎄")
-            if christmas_channel:
-                await christmas_channel.send("Ho, ho, ho, Reading Nook! 🎅 I'm your Festive Librarian for the season. Every frosty Sunday, a heartwarming short story awaits you. Immerse yourself in the festive spirit with each tale! 🎄📖")
-        
-        client.loop.create_task(schedule_messages())
 
     client.run(TOKEN)
 
