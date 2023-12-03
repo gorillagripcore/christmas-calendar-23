@@ -5,7 +5,7 @@ import pytz
 from book_config import books  
 
 def run_discord_bot():
-    TOKEN = 'MTE3ODY5Njg1ODAzMDMyMTc5NQ.GUnV1d.FAcJVTV4T30crJIXtZv0c4QeFu7SqCicX9jqPY'
+    TOKEN = 'add token'
     intents = discord.Intents.default()
     intents.messages = True
     intents.guilds = True
